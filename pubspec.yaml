@@ -11,6 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
 
 dev_dependencies:
   flutter_test:
@@ -33,6 +36,9 @@ flutter:
         pluginClass: Web3AuthFlutterPlugin
       ios:
         pluginClass: Web3AuthFlutterPlugin
+      web:
+        pluginClass: Web3authFlutterWeb
+        fileName: web3auth_flutter_web.dart
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
